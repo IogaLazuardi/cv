@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title> Layanan Data Cuaca </title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
+    <div id="main">
     <center>
       <hr>
-      <table cellspacing="30">
-        <tr>
-          <td><img src="hasilbaru.png" alt="image"height="300"width="450"></td>
-          <td><h1>Sistem Informasi Cuaca</h1>
-          <br>
-          <h3><em>Team Pengembangan</em></h3>
-          </td>
-        </tr>
-      </table>
+      <div class style="padding-left:50px;padding-right:50px;">
+      <img src="earth.png" align="left" width="150px" height="150px">
+      <img src="earth.png" align="right" width="150px" height="150px">
+      </div>
+      <h1>Sistem Informasi Cuaca 🌏</h1>
+      <br>
+      <h3><em>Team Pengembangan</em></h3>
       <hr>
     </center>
     <p>
@@ -25,11 +31,11 @@
       dan pembelajaran.</strong></em>
     </p>
     <hr>
-    <h3>content</h3>
-    <table>
+    <h3 class="change">content</h3>
+    <table border="1">
         <tr>
           <td><strong>Curah Hujan</strong></td>
-          <td><table cellspacing="5">
+          <td><table cellspacing="5" border="2" >
             <tr>
               <td><a href="content.html"target="_blank">Total Precipitation</a></td>
               <td><a href="content.html"target="_blank">Rain Gauge Rainfall Data</a></td>
@@ -37,15 +43,20 @@
           </table></td>
         </tr>
     </table>
-      <ul>
-        <li>temperatur</li>
-        <ol>
-          <li><a href="content.html"target="_blank">Soil Temperature</a></li>
-          <li><a href="content.html"target="_blank">2m Temperature</a></li>
-          <li><a href="content.html"target="_blank">Dewpoint Temperature</a></li>
-        </ol>
-      </ul>
-      <h3>Layanan Penyedia Data Online</h3>
+    <br>
+    <table border="1">
+      <tr>
+        <td><strong>Temperatur</strong></td>
+        <td><table cellspacing="5" border="2">
+          <tr>
+            <td><a href="content.html"target="_blank">Soil Temperature</a></td>
+            <td><a href="content.html"target="_blank">2m Temperature</a></td>
+            <td><a href="content.html"target="_blank">Dewpoint Temperature</a></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <h3 class="change">Layanan Penyedia Data Online</h3>
       <ol type="i">
         <li><a href="https://dataonline.bmkg.go.id/home"target="_blank"><strong>BMKG</a></strong></li>
         <li><a href="https://cds.climate.copernicus.eu/"target="_blank"><strong>Copernicus Datasets</strong></a></li>
@@ -54,10 +65,9 @@
       </ol>
       <hr>
       <center>
-      <p><a href="info layanan.html"target="_blank">info layanan ✉️</a></p>
+      <p id="target"><font size="3"><a href="info layanan.html"target="_blank">info layanan ✉️</font></a></p>
       </center>
       <hr>
-
       <form class="" action="mailto:ioga6604@gmail.com" method="post" enctype="text/plain">
         <label>Masukkan Nama :</label><br>
         <input type="text" name="yourName" value=""><br>
@@ -67,6 +77,6 @@
         <textarea name="yourMassage" rows="8" cols="80"></textarea><br>
         <input type="submit" name="">
       </form>
-
+  </div>
   </body>
 </html>
